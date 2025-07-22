@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conviértete en AI Builder en 7 semanas intensivas. Construye productos reales con IA sin ser programador. Makers Fellowship AI Builder Program.">
+    <meta name="keywords" content="AI Builder, inteligencia artificial, Makers Fellowship, programación sin código, startups, Andrés Bilbao">
+    <meta name="author" content="Makers Fellowship">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Makers Fellowship AI Builder Program - Construye productos reales con IA">
+    <meta property="og:description" content="En 7 semanas intensivas, domina el Vibe Coding y construye productos tecnológicos reales sin ser programador.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="./assets/og-image.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Makers Fellowship AI Builder Program">
+    <meta name="twitter:description" content="Conviértete en AI Builder en 7 semanas intensivas">
+    
+    <title>Makers Fellowship AI Builder Program - Construye productos reales con IA</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">Makers Fellowship</span>
+                </div>
+                <nav class="nav">
+                    <a href="#fellows">Fellows</a>
+                    <a href="#about">About</a>
+                    <a href="#makers">Makers</a>
+                    <a href="#hire">Hire</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#standards">Standards</a>
+                    <a href="#programs">Programs</a>
+                </nav>
+                <button class="btn btn-primary" onclick="openModal()">Apply</button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav">
+                <a href="#fellows" onclick="closeMobileMenu()">Fellows</a>
+                <a href="#about" onclick="closeMobileMenu()">About</a>
+                <a href="#makers" onclick="closeMobileMenu()">Makers</a>
+                <a href="#hire" onclick="closeMobileMenu()">Hire</a>
+                <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+                <a href="#standards" onclick="closeMobileMenu()">Standards</a>
+                <a href="#programs" onclick="closeMobileMenu()">Programs</a>
+            </nav>
+            <button class="btn btn-primary" onclick="openModal()">Apply</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Powered by Makers Fellowship</span>
+                </div>
+                <h1 class="hero-title">
+                    Construye productos reales con IA<br>
+                    <span class="gradient-text">en 7 semanas intensivas</span>
+                </h1>
+                <p class="hero-subtitle">
+                    En solo 7 semanas, te convertirás en un AI Builder capaz de crear 
+                    productos tecnológicos reales sin ser programador. Este no es otro 
+                    curso teórico - es el programa que necesitas para dominar el Vibe 
+                    Coding y construir soluciones que generen impacto real.
+                </p>
+                <div class="hero-credibility">
+                    <p>La comunidad líder de jóvenes talentos en Latinoamérica, fundada por <strong>Andrés Bilbao</strong> (Co-fundador de Rappi, valorada en +$5.2B).</p>
+                </div>
+                <div class="hero-cta">
+                    <button class="btn btn-hero" onclick="openModal()">
+                        <span>ASEGURAR MI CUPO AHORA</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <p class="hero-cta-note">Únete a la próxima generación de builders</p>
+                </div>
+                <div class="company-logos">
+                    <p class="logos-title">Respaldado por las mejores empresas:</p>
+                    <div class="logos-grid">
+                        <div class="logo-item">Truora</div>
+                        <div class="logo-item">BBVA</div>
+                        <div class="logo-item">Google</div>
+                        <div class="logo-item">Obsidian</div>
+                        <div class="logo-item">Cámara de Comercio Cali</div>
+                        <div class="logo-item">KILL B</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="value-prop" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué este programa es diferente?</h2>
+                <p class="section-subtitle">No es teoría. Es construcción real de productos que generan impacto.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3>Construir 3+ productos funcionales</h3>
+                    <p>Desde la idea hasta el deployment completo</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3>Dominar herramientas no-code</h3>
+                    <p>Cursor, N8N, Lovable, Supabase y más</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    <h3>Crear agentes de IA</h3>
+                    <p>Que automaticen procesos reales</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="terminal"></i>
+                    </div>
+                    <h3>Tu propio "Cursor para prompts"</h3>
+                    <p>Una herramienta profesional completamente tuya</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="presentation"></i>
+                    </div>
+                    <h3>Demo Day profesional</h3>
+                    <p>Presenta frente a expertos de la industria</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Red de Makers</h3>
+                    <p>Acceso a mentores y oportunidades laborales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📚 Programa Intensivo - 7 Semanas</h2>
+                <p class="section-subtitle">Cada semana construyes, cada proyecto te acerca a ser un AI Builder</p>
+            </div>
+            <div class="curriculum-timeline">
+                <div class="week-card">
+                    <div class="week-number">1</div>
+                    <div class="week-content">
+                        <h3>Growth & Mentalidad de Builder</h3>
+                        <ul>
+                            <li>Growth 101: De adquisición a referral con frameworks AARRR</li>
+                            <li>Experimentación y growth loops</li>
+                            <li><strong>Mentor especial:</strong> Andrés Bilbao (Rappi Co-founder)</li>
+                        </ul>
+                        <div class="week-project">
+                            <strong>Proyecto:</strong> Estrategia de growth para tu MVP
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-number">2</div>
+                    <div class="week-content">
+                        <h3>Dominio de IA y Prompting Avanzado</h3>
+                        <ul>
+                            <li>Fundamentos de LLMs y estado actual de la IA</li>
+                            <li>Prompting avanzado con markdown y chain-of-thought</li>
+                        </ul>
+                        <div class="week-project">
+                            <strong>Proyecto:</strong> GPT personalizado para startups
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-card">
+                    <div class="week-number">3</div>
+                    <div class="week-content">
+                        <h3>Agentes y Automatización</h3>
+                        <ul>
+                            <li>Product Management 101 aplicado a IA</li>
+                            <li>Construcción de agentes con N8N</li>
+                        </ul>
+                        <div class="week-project">
+                            <strong>Proyecto:</strong> Agente con memoria que integra múltiples fuentes
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-card">
+                    <div class="week-number">4</div>
+                    <div class="week-content">
+                        <h3>Tu Primer MVP No-Code</h3>
+                        <ul>
+                            <li>Arquitectura completa: Frontend (Lovable) + Backend (Supabase)</li>
+                            <li>Mejora de capacidades AI del MVP: Multimodalidad, diseño con AI</li>
+                        </ul>
+                        <div class="week-project">
+                            <strong>Proyecto:</strong> MVP funcional con autenticación y base de datos
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-card">
+                    <div class="week-number">5</div>
+                    <div class="week-content">
+                        <h3>Vibe Coding Avanzado con Cursor</h3>
+                        <ul>
+                            <li>Introducción a Cursor y code assistants</li>
+                            <li>Debugging y optimización avanzada</li>
+                        </ul>
+                        <div class="week-project">
+                            <strong>Proyecto:</strong> Refactor completo de tu aplicación
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-card">
+                    <div class="week-number">6</div>
+                    <div class="week-content">
+                        <h3>Construye tu "Cursor para Prompts"</h3>
+                        <ul>
+                            <li>Ingeniería inversa y construcción de editor inteligente</li>
+                            <li>Integración de APIs y MCPs</li>
+                        </ul>
+                        <div class="week-project">
+                            <strong>Proyecto:</strong> Plataforma completa tipo Cursor para prompt engineering
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-card">
+                    <div class="week-number">7</div>
+                    <div class="week-content">
+                        <h3>Demo Day y Lanzamiento</h3>
+                        <ul>
+                            <li>Presentaciones en vivo (5 min pitch + Q&A)</li>
+                            <li>Feedback de expertos de la industria</li>
+                        </ul>
+                        <div class="week-project">
+                            <strong>Resultado:</strong> Productos seleccionados para implementación real en Makers
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentors Section -->
+    <section class="mentors">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Aprende de los mejores</h2>
+                <p class="section-subtitle">Mentores que han construido las startups más exitosas de Latinoamérica</p>
+            </div>
+            <div class="mentors-grid">
+                <div class="mentor-card">
+                    <div class="mentor-avatar">AB</div>
+                    <h3>Andrés Bilbao</h3>
+                    <p class="mentor-title">Co-founder Rappi</p>
+                    <p class="mentor-bio">Inversionista en 60+ startups. Líder de comunidades de emprendedores con 75k seguidores</p>
+                </div>
+                <div class="mentor-card">
+                    <div class="mentor-avatar">DB</div>
+                    <h3>Daniel Bilbao</h3>
+                    <p class="mentor-title">Co-founder & CEO Truora</p>
+                    <p class="mentor-bio">MBA Dartmouth y serial entrepreneur. Ha lanzado 14 startups y realizado 60+ inversiones</p>
+                </div>
+                <div class="mentor-card">
+                    <div class="mentor-avatar">VP</div>
+                    <h3>Valentina Ponce de León</h3>
+                    <p class="mentor-title">Founder Lab 10</p>
+                    <p class="mentor-bio">Emprendedora tech y Makers Fellow. Enseña IA y tecnología a la próxima generación</p>
+                </div>
+                <div class="mentor-card">
+                    <div class="mentor-avatar">DR</div>
+                    <h3>Dylan Rosemberg</h3>
+                    <p class="mentor-title">Founder & CEO Growth Rockstar</p>
+                    <p class="mentor-bio">Líder en growth en LATAM. Ha escalado +400 startups y formado +1,100 profesionales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="target-audience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎯 ¿Para quién es este programa?</h2>
+            </div>
+            <div class="audience-grid">
+                <div class="audience-column">
+                    <h3>Perfecto si eres:</h3>
+                    <ul class="checklist">
+                        <li><i data-lucide="check"></i> Profesional que quiere transicionarse a tech</li>
+                        <li><i data-lucide="check"></i> Emprendedor con ideas pero sin skills técnicos</li>
+                        <li><i data-lucide="check"></i> Estudiante universitario buscando skills del futuro</li>
+                        <li><i data-lucide="check"></i> Founder que necesita construir su MVP rápidamente</li>
+                        <li><i data-lucide="check"></i> Cualquier persona ambiciosa de 18-35 años</li>
+                    </ul>
+                </div>
+                <div class="audience-column">
+                    <h3>No necesitas:</h3>
+                    <ul class="checklist">
+                        <li><i data-lucide="x"></i> Experiencia en programación</li>
+                        <li><i data-lucide="x"></i> Conocimientos técnicos previos</li>
+                        <li><i data-lucide="x"></i> Herramientas caras (te damos acceso a todo)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">💬 Lo que dicen nuestros alumni</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Tener reuniones semanales con líderes de primera línea del mercado de startups de LatAm como Andrés Bilbao fue combustible para mi crecimiento. Como business fellow, me uní a un equipo de alto rendimiento respaldado por a16z."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <h4>Alumni Makers Fellowship</h4>
+                            <p>Business Fellow</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Makers Fellowship ha sido la oportunidad perfecta para estar rodeado de personas extraordinarias que quieren mejorar diversas industrias en LatAm a través de tecnología, networking y pasión."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <h4>Alumni Makers Fellowship</h4>
+                            <p>Tech Fellow</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">💰 Inversión Total: $500 USD</h2>
+                <p class="section-subtitle">(Valor real del programa: $1,000)</p>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-content">
+                    <div class="price-value">
+                        <span class="price-main">$500 USD</span>
+                        <span class="price-original">$1,000</span>
+                    </div>
+                    <div class="pricing-features">
+                        <h3>Contenido del Programa:</h3>
+                        <ul class="features-list">
+                            <li><i data-lucide="check"></i> 21+ sesiones de entrenamiento intensivo</li>
+                            <li><i data-lucide="check"></i> Acceso a todas las herramientas premium</li>
+                            <li><i data-lucide="check"></i> Proyectos prácticos con feedback personalizado</li>
+                            <li><i data-lucide="check"></i> Certificación Makers AI-Native</li>
+                        </ul>
+                        <h3>Oportunidades Post-Graduación:</h3>
+                        <ul class="features-list">
+                            <li><i data-lucide="rocket"></i> Conexiones directas con VCs y startups en crecimiento</li>
+                            <li><i data-lucide="rocket"></i> Posibilidad de unirte al equipo Makers como AI Expert</li>
+                        </ul>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Opciones de pago:</h3>
+                        <div class="payment-grid">
+                            <div class="payment-option">
+                                <h4>Pago único</h4>
+                                <p class="payment-price">$500 USD</p>
+                                <span class="payment-label">Mejor precio</span>
+                            </div>
+                            <div class="payment-option">
+                                <h4>2 pagos</h4>
+                                <p class="payment-price">$275 USD c/u</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">🚀 Únete ahora y transforma tu carrera en 7 semanas</h2>
+                <div class="cta-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>Haz clic en "ASEGURAR MI CUPO AHORA"</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>Completa tu registro en menos de 2 minutos</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>Recibe acceso inmediato a la comunidad privada</p>
+                    </div>
+                </div>
+                <button class="btn btn-hero" onclick="openModal()">
+                    <span>ASEGURAR MI CUPO AHORA</span>
+                    <i data-lucide="arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas frecuentes</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Necesito experiencia previa en programación?</h3>
+                        <i data-lucide="plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, este programa está diseñado especialmente para personas sin experiencia técnica. Te enseñaremos desde cero usando herramientas no-code y AI assistants.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Cuánto tiempo debo dedicar semanalmente?</h3>
+                        <i data-lucide="plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Recomendamos dedicar entre 10-15 horas semanales para aprovechar al máximo el programa. Esto incluye las sesiones en vivo y tiempo para trabajar en tus proyectos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Qué pasa después de terminar el programa?</h3>
+                        <i data-lucide="plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tendrás acceso permanente a la comunidad Makers, oportunidades de trabajo en startups, mentorías con expertos y la posibilidad de unirte al equipo Makers como AI Expert.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Qué herramientas o tecnología voy a aprender?</h3>
+                        <i data-lucide="plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aprenderás Cursor, N8N, Lovable, Supabase, técnicas de prompting avanzado, construcción de agentes de IA y desarrollo de herramientas personalizadas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Quiénes dictan las clases?</h3>
+                        <i data-lucide="plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Las clases son dictadas por Andrés Bilbao (Co-founder Rappi), Daniel Bilbao (CEO Truora), Valentina Ponce de León (Founder Lab 10) y Dylan Rosemberg (CEO Growth Rockstar).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Qué perfil buscan en los estudiantes?</h3>
+                        <i data-lucide="plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Buscamos personas ambiciosas de 18-35 años, con ganas de aprender y construir. No importa tu background, lo importante es tu mentalidad de builder y compromiso con el programa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Makers Fellowship</h3>
+                    <p>Formando a la próxima generación de líderes tecnológicos en Latinoamérica.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/makersfellowship" target="_blank" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/makers-fellowship" target="_blank" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/MakersFellowship" target="_blank" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Programa</h4>
+                        <a href="#programs">Estructura</a>
+                        <a href="#mentors">Mentores</a>
+                        <a href="#testimonials">Testimonios</a>
+                        <a href="#calendario">Calendario</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <a href="#blog">Blog</a>
+                        <a href="#guia-padres">Guía para padres</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#becas">Becas</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <a href="#about">Sobre nosotros</a>
+                        <a href="#contact">Contacto</a>
+                        <a href="#press">Prensa</a>
+                        <a href="#partners">Partners</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Makers Fellowship. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h2>Si quieres ser parte de las pocas personas que accederán a este programa, déjanos tus datos para que seas de los primeros</h2>
+                <button class="modal-close" onclick="closeModal()">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <form class="registration-form" id="registrationForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido *</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="carrera">Carrera/Profesión *</label>
+                    <input type="text" id="carrera" name="carrera" required>
+                </div>
+                <div class="form-group">
+                    <label for="egresado">¿Eres egresado? *</label>
+                    <select id="egresado" name="egresado" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="universidad">Universidad *</label>
+                    <input type="text" id="universidad" name="universidad" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad *</label>
+                    <input type="number" id="edad" name="edad" min="18" max="35" required>
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular *</label>
+                    <input type="tel" id="celular" name="celular" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pais">País *</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona tu país</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="costa-rica">Costa Rica</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="el-salvador">El Salvador</option>
+                        <option value="guatemala">Guatemala</option>
+                        <option value="honduras">Honduras</option>
+                        <option value="mexico">México</option>
+                        <option value="nicaragua">Nicaragua</option>
+                        <option value="panama">Panamá</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Perú</option>
+                        <option value="republica-dominicana">República Dominicana</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    ENVIAR SOLICITUD
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>
